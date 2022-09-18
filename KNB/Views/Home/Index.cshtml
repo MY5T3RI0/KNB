@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewBag.Title = "Main";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col headerIndex">
+            <h2>Welcome to the  game</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col textBlock">
+            <div>
+                Registration
+            </div>
+        </div>
+        <div class="col textBlock">
+            <div>
+                Authorization
+            </div>
+        </div>
+        <div class="col textBlock">
+            <div>
+                Start game
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col textBlock">
+            <b>Game description</b>
+            <p>
+                Игра популярна в силу своей простоты, непредсказуемости и тем,
+                что не требует специальных приспособлений и реквизитов.
+                Вся игра проходит с помощью рук людей. В игре могут участвовать два и более игрока.
+                Игроки считают вместе вслух «Камень… Ножницы… Бумага… Раз… Два… Три», одновременно качая кулаками.
+                На счёт «Три» они одновременно показывают при помощи руки один из трёх знаков: камень, ножницы или бумагу.
+                Победитель определяется по следующим правилам:
+
+                <ul>
+                    <li>
+                        Бумага побеждает камень («бумага обёртывает камень»).
+                    </li>
+                    <li>
+                        Камень побеждает ножницы («камень затупляет или ломает ножницы»).
+                    </li>
+                    <li>
+                        Ножницы побеждают бумагу («ножницы разрезают бумагу»).
+                    </li>
+                </ul>
+
+                Если игроки показали одинаковый знак, то засчитывается ничья и игра переигрывается.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col textBlock">
+            <img src="~/Content/Images/stone.png" alt="stone" />
+        </div>
+        <div class="col textBlock">
+            <img src="~/Content/Images/knifes.png" alt="knifes" />
+        </div>
+        <div class="col textBlock">
+            <img src="~/Content/Images/paper.png" alt="paper" />
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col textBlock">
+            <div>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Games played:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="col textBlock">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Last winner:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="col textBlock">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Leader:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+
