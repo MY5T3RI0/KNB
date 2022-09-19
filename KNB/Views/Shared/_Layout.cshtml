@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - KNB</title>
-    <link rel="stylesheet" href="~/Content/bootstrap.css"/>
+    @Styles.Render("~/Content/bootstrap.css")
     @Styles.Render("~/Content/css")
     @Styles.Render("~/bundles/modernizr")
-</head>
 
+</head>
 <body style="min-height: 100vh;">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(227, 242, 253, 0.9)">
         <div class="container-fluid">
@@ -49,9 +49,9 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")
-    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    @Scripts.Render("~/Scripts/bootstrap.js")
+
     @RenderSection("scripts", required: false)
 
 </body>
-
 </html>
