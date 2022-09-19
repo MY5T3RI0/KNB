@@ -28,10 +28,10 @@
                     <li class="nav-item">
                         @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })
                     </li>
-                    <li class="nav-item">
-                        @*<a class="nav-link disabled">Disabled</a>*@
-                    </li>
                 </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav" style="flex-grow:unset">
+                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </nav>
