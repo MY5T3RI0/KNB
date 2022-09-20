@@ -24,7 +24,7 @@ namespace KNB.App_Start
                 "~/Scripts/respond.js")); //respond lib
 
             bundles.Add(new ScriptBundle("~/Content/css").Include(
-                "~/Content/Site.css"));                     //создание адресов
+                "~/Content/site.css"));                     //создание адресов
         }
     }
 }

@@ -10,6 +10,8 @@ namespace KNB.Models
     {
         public int UserAge { get; set; }
 
+        public int UserBalance { get; set; }
+
         public ApplicationUser() {}
     }
 }

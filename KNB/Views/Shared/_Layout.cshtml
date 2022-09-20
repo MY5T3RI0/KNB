@@ -7,7 +7,6 @@
     <title>@ViewBag.Title - KNB</title>
     @Styles.Render("~/Content/bootstrap.css")
     @Styles.Render("~/Content/css")
-    @Styles.Render("~/bundles/modernizr")
 
 </head>
 <body style="min-height: 100vh;">
@@ -27,6 +26,9 @@
                     </li>
                     <li class="nav-item">
                         @Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Profile", "Profile", "Manage", null, new { @class = "nav-link" })
                     </li>
                 </ul>
             </div>
@@ -50,6 +52,7 @@
     @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/Scripts/bootstrap.js")
+    @Scripts.Render("~/bundles/modernizr")
 
     @RenderSection("scripts", required: false)
 

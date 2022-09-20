@@ -1,0 +1,32 @@
+﻿@model KNB.Models.ManageModel
+
+@{
+    ViewBag.Title = "Личный кабинет";
+}
+
+<div class="container-fluid textBlock">
+    <div class="row">
+        <div class="col textBlock">
+            <div> <span style="font-size: xx-large">Ваш Login: </span> <span class="profileText headerIndex">@Model.Login</span> </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col textBlock">
+            <span style="font-size: xx-large">Ваш Возраст: </span> <span class="profileText">@Model.Age</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col textBlock">
+            <span style="font-size: xx-large">Ваш Баланс: </span> <span class="profileText">@Model.Balance</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col textBlock">
+            <span style="font-size: xx-large">Ваш Email: </span> <span class="profileText">@Model.Email</span>
+        </div>
+    </div>
+</div>
+

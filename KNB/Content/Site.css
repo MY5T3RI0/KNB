@@ -31,7 +31,11 @@ textarea {
     text-align: center;
 }
 
+.profileText {
+    font-size: xx-large;
+    color:cadetblue;
+}
+
 .footerStyle{
-    text-align: center;
-    color: azure;
+    color:azure;
 }
