@@ -22,7 +22,7 @@ namespace KNB.Controllers
 
 
         // GET: Manage
-        public async Task<ActionResult> Profile()
+        public async Task<ActionResult> UserProfile()
         {
             ApplicationUser user = await UserManager.FindByEmailAsync(User.Identity.Name);
 

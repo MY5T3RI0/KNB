@@ -180,7 +180,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Images\background.png" />
-    <Content Include="Content\Images\knifes.png" />
+    <Content Include="Content\Images\knives.png" />
     <Content Include="Content\Images\marek-piwnicki-vxgdUHVQi7E-unsplash.jpg" />
     <Content Include="Content\Images\paper.png" />
     <Content Include="Content\Images\stone.png" />
@@ -318,6 +318,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -335,6 +336,10 @@
     <Compile Include="Models\ApplicationContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ApplicationUserManager.cs" />
+    <Compile Include="Models\GameContext.cs" />
+    <Compile Include="Models\GameItems.cs" />
+    <Compile Include="Models\GameModel.cs" />
+    <Compile Include="Models\GameRules.cs" />
     <Compile Include="Models\ManageModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\RegisterModel.cs" />
@@ -360,8 +365,9 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Manage\Profile.cshtml" />
+    <Content Include="Views\Manage\UserProfile.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Game\Game.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

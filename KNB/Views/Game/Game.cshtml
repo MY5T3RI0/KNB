@@ -1,0 +1,62 @@
+﻿@model KNB.Models.GameModel
+
+@{
+    ViewBag.Title = "Game";
+}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col textBlock align-items-center">
+                <div>
+                    <span class="profileText">Выберите камень, ножницы или бумагу</span>
+                </div>
+            </div>
+        </div>
+
+        @using (Html.BeginForm())
+        {
+            <div class="row">
+                <div class="col1 textBlock align-items-center">
+                    @Html.RadioButtonFor(m => m.PlayerChoice, "Камень", new { @checked = true })
+                    <img src="~/Content/Images/stone.png" alt="Stone" style="height: 100px" class="rounded-circle" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1 textBlock align-items-center">
+                    @Html.RadioButtonFor(m => m.PlayerChoice, "Ножницы")
+                    <img src="~/Content/Images/knives.png" alt="Stone" style="height: 100px" class="rounded-circle" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1 textBlock align-items-center">
+                    @Html.RadioButtonFor(m => m.PlayerChoice, "Бумага")
+                    <img src="~/Content/Images/paper.png" alt="Paper" style="height: 100px" class="rounded-circle" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col textBlock align-items-center">
+                    <input type="submit" name="playButton" value="Play" class="btn btn-success" />
+                </div>
+            </div>
+        }
+        @if (ViewBag.Result == 1)
+        {
+            <div class="row">
+                <div class="col textBlock align-items-center">
+                    <div class="row">
+                        <div class="col textBlock align-items-center">
+                            Result: @Html.LabelForModel(Model.GameResult)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col textBlock align-items-center">
+                            Your choice: @Html.LabelForModel(Model.PlayerChoice)
+                        </div>
+                        <div class="col textBlock align-items-center">
+                            Opponent choice: @Html.LabelForModel(Model.OpponentChoice)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+

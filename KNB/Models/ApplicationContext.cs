@@ -14,5 +14,6 @@ namespace KNB.Models
         {
             return new ApplicationContext();
         }
+
     }
 }
